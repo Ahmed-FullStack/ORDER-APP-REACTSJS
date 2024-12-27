@@ -1,0 +1,7 @@
+button {
+	border-radius: 5rem;
+}
+button:active,
+button:focus-visible {
+	background-color: hsl(0 0% 90%);
+}

@@ -1,0 +1,36 @@
+:root {
+	--clr-white: #fff;
+	font-size: 90%;
+}
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+.color-white {
+	color: #fff;
+}
+body.overlay-opened {
+	overflow: hidden;
+}
+
+*::selection {
+	background-color: hsl(205 50% 50% / 0.53);
+	color: #fff;
+}
+div,
+button,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+img,
+video {
+	user-select: none;
+}
+
+.selectable {
+	user-select: auto;
+}

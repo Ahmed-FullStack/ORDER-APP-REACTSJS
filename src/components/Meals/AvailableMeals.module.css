@@ -1,0 +1,41 @@
+.meals-card {
+	display: grid;
+	place-items: center;
+}
+.card {
+	border-radius: 2rem;
+}
+.meals {
+	max-width: 60rem;
+	width: 90%;
+	margin: 2rem auto;
+	animation: meals-appear 300ms ease-out forwards;
+}
+
+.meals ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.err-text {
+	color: hsl(0 0% 0%);
+	font-weight: 500;
+}
+.web-spinner {
+	--spinner-bg-clr: hsl(221 20% 22% / 1);
+	--spinner-width: 5rem;
+	--spinner-border-width: 0.5rem;
+}
+
+@keyframes meals-appear {
+	from {
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

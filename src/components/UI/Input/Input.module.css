@@ -1,0 +1,41 @@
+.input {
+	display: flex;
+	margin-bottom: 0.5rem;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+input {
+	border: none;
+	outline: none;
+	background-color: hsl(0 0% 88%);
+	transition: background-color 150ms var(--slow-fast-in);
+}
+input:hover {
+	background-color: hsl(0 0% 80%);
+}
+.input label {
+	font-weight: bold;
+	margin-right: 1rem;
+}
+
+.input input {
+	border-radius: 5px;
+	font: inherit;
+	padding-left: 0.5rem;
+}
+.input-error input {
+	--invalid-clr: rgb(255, 155, 155);
+	background-color: var(--invalid-clr);
+}
+.err {
+	--invalid-clr: rgb(122, 0, 0);
+	font-size: 0.8rem;
+	color: var(--invalid-clr);
+}
+.form-control {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	gap: 0.2rem;
+}
